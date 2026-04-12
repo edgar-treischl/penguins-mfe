@@ -125,11 +125,10 @@ export default function App() {
       <section className="panel">
         <header className="panel-header">
           <div>
-            <p className="eyebrow">HR micro-frontend</p>
-            <h1>Penguin explorer</h1>
+            <p className="eyebrow">Palmer Penguins</p>
+            <h1>Penguin Explorer</h1>
             <p className="panel-copy">
-              A compact single-page example that fits inside a host shell: pick a
-              species and axes, then compare a small Palmer Penguins sample with a
+              Pick a species and axes, then compare a small Palmer Penguins sample with a
               scatter plot.
             </p>
           </div>
@@ -196,7 +195,6 @@ export default function App() {
             <div className="card-heading">
               <div>
                 <h2>{yMetric.label} vs. {xMetric.label}</h2>
-                <p>Static sample data rendered in a plain SVG chart for fast first load.</p>
               </div>
             </div>
 

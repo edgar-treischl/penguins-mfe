@@ -126,11 +126,7 @@ export default function App() {
         <header className="panel-header">
           <div>
             <p className="eyebrow">Palmer Penguins</p>
-            <h1>Penguin Explorer</h1>
-            <p className="panel-copy">
-              Pick a species and axes, then compare a small Palmer Penguins sample with a
-              scatter plot.
-            </p>
+            <h1>Explorer</h1>
           </div>
           <div className="summary-chip">
             <strong>{filteredPenguins.length}</strong>

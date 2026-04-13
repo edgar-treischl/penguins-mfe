@@ -121,7 +121,7 @@ export default function App() {
   const islands = new Set(filteredPenguins.map((penguin) => penguin.island))
 
   return (
-    <main className="app-shell">
+    <main className="penguins-app">
       <section className="panel">
         <header className="panel-header">
           <div>

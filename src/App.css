@@ -1,22 +1,22 @@
-.app-shell {
+.penguins-app {
   width: 100%;
 }
 
-.panel {
+.penguins-app .panel {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px;
 }
 
-.panel-header {
+.penguins-app .panel-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
 }
 
-.eyebrow {
+.penguins-app .eyebrow {
   margin-bottom: 8px;
   color: var(--accent);
   font-size: 13px;
@@ -25,22 +25,22 @@
   text-transform: uppercase;
 }
 
-.panel-copy {
+.penguins-app .panel-copy {
   max-width: 62ch;
 }
 
-.summary-chip,
-.controls-card,
-.chart-card,
-.stat-card,
-.legend-card {
+.penguins-app .summary-chip,
+.penguins-app .controls-card,
+.penguins-app .chart-card,
+.penguins-app .stat-card,
+.penguins-app .legend-card {
   border: 1px solid var(--border);
   border-radius: 18px;
   background: var(--panel-bg);
   box-shadow: var(--shadow);
 }
 
-.summary-chip {
+.penguins-app .summary-chip {
   min-width: 132px;
   display: flex;
   flex-direction: column;
@@ -48,29 +48,29 @@
   padding: 14px 16px;
 }
 
-.summary-chip strong {
+.penguins-app .summary-chip strong {
   color: var(--text-h);
   font-size: 28px;
   line-height: 1;
 }
 
-.summary-chip span {
+.penguins-app .summary-chip span {
   font-size: 14px;
 }
 
-.controls-card,
-.chart-card,
-.legend-card {
+.penguins-app .controls-card,
+.penguins-app .chart-card,
+.penguins-app .legend-card {
   padding: 18px;
 }
 
-.control-grid {
+.penguins-app .control-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
-.field {
+.penguins-app .field {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -79,7 +79,7 @@
   color: var(--text-h);
 }
 
-.field select {
+.penguins-app .field select {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--bg);
@@ -87,92 +87,92 @@
   padding: 10px 12px;
 }
 
-.helper-text {
+.penguins-app .helper-text {
   margin-top: 12px;
   font-size: 14px;
 }
 
-.content-grid {
+.penguins-app .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
   gap: 16px;
   align-items: start;
 }
 
-.card-heading {
+.penguins-app .card-heading {
   margin-bottom: 16px;
 }
 
-.card-heading p,
-.legend-card p {
+.penguins-app .card-heading p,
+.penguins-app .legend-card p {
   margin-top: 6px;
 }
 
-.chart-frame {
+.penguins-app .chart-frame {
   overflow-x: auto;
 }
 
-.chart {
+.penguins-app .chart {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.grid-line {
+.penguins-app .grid-line {
   stroke: var(--grid-line);
   stroke-width: 1;
 }
 
-.axis-line {
+.penguins-app .axis-line {
   stroke: var(--text-h);
   stroke-width: 1.2;
 }
 
-.axis-label,
-.axis-title {
+.penguins-app .axis-label,
+.penguins-app .axis-title {
   fill: var(--text);
   font-size: 12px;
 }
 
-.axis-label-y {
+.penguins-app .axis-label-y {
   text-anchor: end;
 }
 
-.axis-title {
+.penguins-app .axis-title {
   fill: var(--text-h);
   font-size: 13px;
   font-weight: 600;
 }
 
-.plot-point {
+.penguins-app .plot-point {
   fill-opacity: 0.9;
   stroke: rgba(255, 255, 255, 0.95);
   stroke-width: 2;
 }
 
-.sidebar {
+.penguins-app .sidebar {
   display: grid;
   gap: 12px;
 }
 
-.stat-card {
+.penguins-app .stat-card {
   padding: 16px 18px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.stat-card strong {
+.penguins-app .stat-card strong {
   color: var(--text-h);
   font-size: 24px;
   line-height: 1.15;
 }
 
-.stat-label {
+.penguins-app .stat-label {
   font-size: 14px;
 }
 
-.legend-list {
+.penguins-app .legend-list {
   list-style: none;
   margin: 16px 0 0;
   padding: 0;
@@ -180,35 +180,35 @@
   gap: 10px;
 }
 
-.legend-list li {
+.penguins-app .legend-list li {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--text-h);
 }
 
-.legend-swatch {
+.penguins-app .legend-swatch {
   width: 12px;
   height: 12px;
   border-radius: 999px;
 }
 
 @media (max-width: 900px) {
-  .panel {
+  .penguins-app .panel {
     padding: 20px;
   }
 
-  .panel-header,
-  .content-grid {
+  .penguins-app .panel-header,
+  .penguins-app .content-grid {
     grid-template-columns: 1fr;
     display: grid;
   }
 
-  .summary-chip {
+  .penguins-app .summary-chip {
     min-width: 0;
   }
 
-  .control-grid {
+  .penguins-app .control-grid {
     grid-template-columns: 1fr;
   }
 }

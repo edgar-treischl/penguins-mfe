@@ -1,4 +1,4 @@
-:root {
+.penguins-app {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -28,7 +28,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  .penguins-app {
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
@@ -41,49 +41,53 @@
   }
 }
 
-* {
+.penguins-app,
+.penguins-app * {
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
+.penguins-app-body {
+  margin: 0;
+}
+
+.penguins-app-root {
   min-height: 100svh;
 }
 
-body {
-  margin: 0;
+.penguins-app {
+  width: 100%;
+  color: var(--text);
   background: var(--bg);
 }
 
-h1,
-h2 {
+.penguins-app h1,
+.penguins-app h2 {
   font-family: var(--heading);
   font-weight: 600;
   color: var(--text-h);
 }
 
-h1 {
+.penguins-app h1 {
   margin: 0;
   font-size: clamp(2rem, 3vw, 2.75rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
 }
 
-h2 {
+.penguins-app h2 {
   margin: 0;
   font-size: 1.1rem;
   line-height: 1.2;
 }
 
-p {
+.penguins-app p {
   margin: 0;
 }
 
-button,
-input,
-select,
-textarea {
+.penguins-app button,
+.penguins-app input,
+.penguins-app select,
+.penguins-app textarea {
   font: inherit;
   color: var(--text-h);
 }

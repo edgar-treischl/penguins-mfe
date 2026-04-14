@@ -14,7 +14,7 @@
 
   font: 16px/1.5 var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -24,20 +24,6 @@
 
   @media (max-width: 1024px) {
     font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .penguins-app {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --panel-bg: #1b1d26;
-    --border: #2e303a;
-    --accent: #c084fc;
-    --grid-line: rgba(156, 163, 175, 0.18);
-    --shadow:
-      rgba(0, 0, 0, 0.35) 0 18px 32px -18px, rgba(0, 0, 0, 0.28) 0 10px 18px -14px;
   }
 }
 

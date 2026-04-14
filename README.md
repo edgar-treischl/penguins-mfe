@@ -1,4 +1,4 @@
-# Test MFE
+# Penguin MFE
 
 This repository is a small **test micro-frontend remote** built with **React**, **TypeScript**, **Vite**, and **module federation**.
 

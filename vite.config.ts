@@ -9,12 +9,12 @@ const sharedModules: Record<string, { singleton: boolean }> = {
 
 export default defineConfig({
   // IMPORTANT for GitHub Pages deployment
-  base: '/test-mfe/',
+  base: '/penguins-mfe/',
 
   plugins: [
     react(),
     federation({
-      name: 'test-mfe',
+      name: 'penguins-mfe',
       filename: 'remoteEntry.js',
       exposes: {
         './HRApp': './src/App.tsx',
